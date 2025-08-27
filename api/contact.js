@@ -32,7 +32,7 @@ export default async function (request) {
   }
 
   const from = process.env.RESEND_FROM || "no-reply@yourdomain.com";
-  const to = process.env.RESEND_TO || "you@example.com";
+  const to = process.env.RESEND_TO || "simonecolombo001@gmail.com";
 
   try {
     await resend.emails.send({
