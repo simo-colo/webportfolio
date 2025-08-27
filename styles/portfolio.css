@@ -162,7 +162,7 @@
 @media (max-width: 1150px){
 
 	.portfolio-container{
-	padding: 0px 40px 0px;
+	padding: 0px 50px 0px;
 	max-width:1000px;
 	
 
@@ -236,7 +236,8 @@
 	}
 
 	.project{
-	flex: 0 0 calc(100%);
+	
 	height:320px;
+	min-width: 220px;
 }
 }
