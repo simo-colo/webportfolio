@@ -148,9 +148,14 @@
 
  @media (max-width: 500px) {
 
+  .cards-container{
+    gap:15px;
+  }
+
   .card {
-      flex: 0 0 100px;
-      height:110px;
+    padding:5px;
+      flex: 0 0 120px;
+      height:120px;
     }
 
         .cardIcon{
@@ -162,7 +167,7 @@
 }
 
     .cardText{
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
  }
