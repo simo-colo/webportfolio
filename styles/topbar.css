@@ -1,0 +1,103 @@
+.barItem{
+	width: 20rem;
+}
+
+.topbar-container{
+	width:100%;
+	position: sticky;
+	top: 0;
+  z-index: 10;
+}
+
+.topbar{
+	display:flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	height:5rem;
+	padding: 0.5rem 60px;
+	font-size:1rem;
+	font-weight: 300;
+	
+  transition: box-shadow 0.3s ease, border-bottom 0.3s ease;
+  background-color: var(--lightg);
+
+  min-width:800px;
+
+}
+
+.topbar.scrolled {
+  border-bottom: 1px solid #777;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+
+
+.menu{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	text-decoration: none;
+	color: #ddd;
+}
+
+.menuItem{
+	
+	font-weight: 600;
+	text-align: center;
+
+}
+
+.menuItem:hover{
+	color: #fff;
+	cursor: pointer;
+}
+
+
+
+.gotoWrapper{
+	font-weight: 600;
+	padding:1rem 0px;
+	border-radius: 8px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height:7px;
+	width:150px;
+	color: #F7D07C;
+	border: 1px solid var(--gold);
+
+
+
+}
+
+.gotoWrapper:hover{
+	color: #111 ;
+	background-color: var(--gold);
+
+}
+
+.goto{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+	max-width: 200px;
+
+}
+
+.logoContainer{
+	display:flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	max-width: 200px;
+}
+
+.logo{
+	width: 2.5rem;
+
+
+}

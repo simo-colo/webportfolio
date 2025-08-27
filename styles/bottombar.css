@@ -1,0 +1,13 @@
+.bottombar-wrapper{
+	background-color: var(--shadow);
+	height:70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.bottombar-container{
+	font-size: 0.8rem;
+	color: #bbb;
+
+}

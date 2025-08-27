@@ -1,0 +1,39 @@
+#copyAlertContainer{
+	position: fixed;     
+  bottom: 75px;        
+  left: 50%;           
+  transform: translateX(-50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid var(--gold);
+	padding: 5px 15px;
+	border-radius: 5px;
+	color: #fff;
+	background-color: var(--darkg);
+	opacity: 0;
+	transition: transform 0.5s;
+}
+
+.slide{
+	animation: slideUpDown 2s ease-in-out forwards;
+}
+
+@keyframes slideUpDown {
+  0% {
+    bottom: -100px;
+    opacity: 0;
+  }
+  10% {
+    bottom: 80px;   /* target height */
+    opacity: 1;
+  }
+  90% {
+    bottom: 80px;
+    opacity: 1;
+  }
+  100% {
+    bottom: -100px;
+    opacity: 0;
+  }
+}
