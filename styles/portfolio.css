@@ -161,6 +161,13 @@
 
 @media (max-width: 1150px){
 
+	.portfolio-container{
+	padding: 0px 40px 0px;
+	max-width:1000px;
+	
+
+}
+
 
 .project-container{
 	gap:40px;
@@ -171,7 +178,7 @@
 .project{
 	flex: 0 0 calc(40% - 40px);
 	max-width: 250px;
-	height:370px;
+	height:350px;
 }
 
 .project-title{
@@ -214,7 +221,7 @@
 	}
 	.project{
 	flex: 0 0 calc(50% - 40px);
-	height:350px;
+	height:330px;
 }
 }
 
@@ -230,6 +237,6 @@
 
 	.project{
 	flex: 0 0 calc(100%);
-	height:370px;
+	height:320px;
 }
 }
