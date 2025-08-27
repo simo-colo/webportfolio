@@ -220,13 +220,6 @@
 
 @media (max-width: 650px){
 
-	.project-title{
-	font-size: 1rem;
-}
-
-.project-desc, .project-btn{
-	font-size: 0.8rem;
-}
 
 	.project-container{
 		padding: 20px 15px;
