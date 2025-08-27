@@ -8,6 +8,14 @@
   });
 
 
+function scrollToSection(id) {
+  const section = document.getElementById(id);
+  const yOffset = -130; // scroll 50px above the section
+  const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+  window.scrollTo({ top: y, behavior: 'smooth' });
+}
+
 
 
 

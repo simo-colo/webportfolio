@@ -39,12 +39,12 @@
 
             </div></a>
             <div class="menu barItem">
-                <a href=""><div class="menuItem">About Me</div></a>
+                <div onclick="scrollToSection('about')" class="menuItem">About Me</div>
                 <!--<a href=""><div class="menuItem">Skills</div></a>-->
-                 <a href=""><div class="menuItem">Portfolio</div></a>
-                 <a href=""><div class="menuItem">Contacts</div></a>
+                 <div onclick="scrollToSection('portfolio')"class="menuItem">Portfolio</div>
+                 <div onclick="scrollToSection('contacts')"class="menuItem">Contacts</div>
             </div>
-            <a href="#"><div class="barItem goto"><div class="gotoWrapper"> Contact Me </div></div></a>
+            <div class="barItem goto"><div onclick="scrollToSection('contacts')"class="gotoWrapper"> Contact Me </div></div>
         </div>
 
         </div>
@@ -66,7 +66,7 @@
         </div>
 
 
-        <div class="about-wrapper">
+        <div class="about-wrapper" id ="about">
             <div class="about-container">
 
             <div class="section-title box">About Me</div>
@@ -120,7 +120,7 @@
     <!--BEGIN OF PORTFOLIO-->
 
 
-   <div class="portfolio-wrapper">
+   <div class="portfolio-wrapper" id ="portfolio">
             <div class="portfolio-container">
 
             <div class="section-title">Portfolio</div>
@@ -185,7 +185,7 @@
 
     <!--BEGIN OF CONTACTS-->
 
-    <div class="contact-wrapper" style="border-top: 1px solid var(--gold);">
+    <div class="contact-wrapper" id ="contacts" style="border-top: 1px solid var(--gold);">
         <div class="contact-title box">Contacts</div>
 
             <div class="contact-container">
@@ -257,7 +257,7 @@
     <div class="bottombar-wrapper" >
             <div class="bottombar-container">
 
-        Bottom Bar Container
+        Simone Colombo - 2025 - All rights reserved
 
 
 

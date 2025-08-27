@@ -64,16 +64,15 @@ body {
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
-a{
-	text-decoration: none;
-	color: #ddd;
-}
+
 
 .menu{
 	display:flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	text-decoration: none;
+	color: #ddd;
 }
 
 .menuItem{
@@ -85,6 +84,7 @@ a{
 
 .menuItem:hover{
 	color: #fff;
+	cursor: pointer;
 }
 
 
@@ -665,7 +665,7 @@ a{
 
 .bottombar-wrapper{
 	background-color: var(--shadow);
-	height:80px;
+	height:70px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
