@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calm Gradient Waves in Text</title>
+<style>
+  body {
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+  }
+
+  .wave-text {
+    font-size: 4rem;
+    font-weight: bold;
+    background: linear-gradient(
+      120deg,
+      #ffffff 0%,
+      #dd77bb 20%,
+      #b37a2f 40%,
+      #ffffff 60%,
+      #dcdcdc 80%,
+      #f5f5f5 100%
+    );
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: waveMove 3s ease-in-out infinite;
+  }
+
+  @keyframes waveMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="wave-text">Loading...</div>
+</body>
+</html>
