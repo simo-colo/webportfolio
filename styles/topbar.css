@@ -2,11 +2,13 @@
 	width: 20rem;
 }
 
+
+
 .topbar-container{
 	width:100%;
 	position: sticky;
 	top: 0;
-  z-index: 10;
+  z-index: 20;
 }
 
 .topbar{
@@ -16,19 +18,20 @@
 	justify-content: space-between;
 	height:5rem;
 	padding: 0.5rem 60px;
-	font-size:1rem;
+	font-size:0.9rem;
 	font-weight: 300;
-	
+	z-index:10;
   transition: box-shadow 0.3s ease, border-bottom 0.3s ease;
   background-color: var(--lightg);
+  border-bottom: 1px solid var(--lightg);
 
-  min-width:800px;
+
 
 }
 
 .topbar.scrolled {
   border-bottom: 1px solid #777;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  /*box-shadow: 0 2px 5px rgba(0,0,0,0.05);*/
 }
 
 
@@ -76,6 +79,7 @@
 .gotoWrapper:hover{
 	color: #111 ;
 	background-color: var(--gold);
+	cursor: pointer;
 
 }
 
@@ -97,7 +101,147 @@
 }
 
 .logo{
-	width: 2.5rem;
+	width: 1.8rem;
 
 
 }
+
+.menu-button{
+		display: none;
+		justify-content: flex-end;
+		align-items: center;
+}
+
+.menu-button-icon{
+	width:30px;
+}
+
+.mini-menu{
+	display: none;
+	transform: translateY(-100%);
+	opacity: 1;
+	transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+	z-index:9;
+
+
+}
+
+.close-btn-row{
+	width:93%;
+	padding-top:30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+
+}
+
+.close-btn-icon, .menu-button-icon{
+	width:20px;
+}
+
+#closebtn{
+	display: none;
+}
+
+#closebtn, #menubtn{
+	opacity: 0.8;
+}
+
+#closebtn:hover, #menubtn:hover{
+	cursor: pointer;
+	opacity:1;
+}
+
+.active{
+	transform: translateY(0);
+	opacity: 1;
+	transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+
+
+
+/*responsiveness*/
+
+@media (max-width: 930px){
+
+	.logo{
+		width:1.5rem;
+	}
+
+	.mini-menu{
+	display: none;
+	justify-content: flex-start;
+	align-items: center;
+	position: fixed;
+	flex-direction: column;
+	padding: 0px;
+	top:49px;
+	height:100%;
+	width:100%;
+	background-color: var(--lightg);
+	z-index: 2;
+	overflow: hidden;
+	padding-top:50px;
+	}
+
+	.topbar{
+		padding: 0.5rem 30px;
+		height:2rem;
+	}
+	.menu, .goto{
+		display: none;
+	}
+
+	.menu-button{
+		display: flex;
+	}
+
+}
+
+.mini-menu-container{
+	width:85%;
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+	align-items: flex-start;
+	gap:20px;
+	z-index:9;
+}
+
+.mini-menu-item{
+	font-weight: bold;
+	color: #ddd;
+	font-size: 1.6rem;
+
+}
+
+.mini-menu-item:hover{
+	cursor: pointer;
+	color: #fff;
+}
+
+
+
+@media (max-width: 600px){
+	.barItem{
+		width:3rem;
+	}
+
+	.mini-menu-item{
+	font-weight: bold;
+	color: #ddd;
+	font-size: 1.3rem;
+
+}
+
+}
+
+
+
+
+
+
+
+

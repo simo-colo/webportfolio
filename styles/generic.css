@@ -1,5 +1,5 @@
 * {
-	border: 0px solid red;
+	border: 0px solid #222;
 }
 
 :root {
@@ -16,15 +16,19 @@ html{
 
 body {
 	
-	margin: 20px 0px 0px;
+	margin: 0px 0px 0px;
 	box-sizing: border-box;
 	background-color: var(--lightg);
 
 }
 
+a {
+	text-decoration: none;
+}
 
 
 .outer{
+	position: relative;
 	display: block;
 	flex-direction: column;
 	align-items: center;

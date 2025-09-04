@@ -1,0 +1,59 @@
+/* Tweak these if you like */
+.gold-dots {
+  z-index: 0;
+  /* Make it a responsive square; width follows its parent */
+  width: min(36vmin, 280px);
+  aspect-ratio: 1 / 1;
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  place-items: center;
+  gap: clamp(6px, 1.2vmin, 14px);  /* spacing between dots */
+
+  /* Just the dots—no background, no border = no visible square */
+  background: transparent;
+  top:75%;
+  right:-10%;
+  opacity:0.5;
+
+}
+
+
+.gold-dots-hero{
+  position: absolute;
+  top: 12%;
+  left: -6%;
+
+  z-index: 0;
+
+}
+
+@media (max-width: 700px){
+  .gold-dots{
+    top:85%;
+  right:-20%;
+  }
+}
+
+@media (max-width: 500px){
+  .gold-dots{
+    top:90%;
+  right:-25%;
+  }
+}
+
+/* Dot style */
+.gold-dots .dot {
+  width: clamp(15px, 2.2vmin, 20px);
+  height: clamp(15px, 2.2vmin, 20px);
+  border-radius: 50%;
+  background: var(--gold); /* uses your --gold, falls back to a gold tone */
+  display: block;
+}
+
+@media (max-width:1150px){
+  .gold-dots-hero{
+    display: none;
+  }
+}

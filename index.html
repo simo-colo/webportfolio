@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles/portfolio.css">
     <link rel="stylesheet" href="styles/contact.css">
     <link rel="stylesheet" href="styles/bottombar.css">
+    <link rel="stylesheet" href="styles/squares.css">
     <link rel="stylesheet" href="styles/copyAlert.css">
 
     <script  src="script.js" defer></script>
@@ -24,7 +25,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
 
-   <meta http-equiv="refresh" content="200" /> 
+   <meta http-equiv="refresh" content="20" /> 
     
     
 </head>
@@ -35,36 +36,57 @@
 
 
 
-<div class="outer">
+<div  class="outer">
+
+    <div id="minimenu" class="mini-menu">
+        <div class="mini-menu-container">
+            <div class="mini-menu-item" onclick="scrollToSection('about')">About Me</div>
+            <div class="mini-menu-item" onclick="scrollToSection('portfolio')">Portfolio</div>
+            <div class="mini-menu-item" onclick="scrollToSection('contacts')">Contacts</div>
+            <div class="mini-menu-item">Let's work together</div>
+        </div>
+    </div>
 
 <div class="topbar-container">
 
         <div class="topbar">
             <a href="#"><div class="logoContainer barItem">
-                <img class="logo" src="logoy.png">
+                <img onclick="scrollToSection('start')" class="logo" src="logoy.png">
                 
 
             </div></a>
             <div class="menu barItem">
                 <div onclick="scrollToSection('about')" class="menuItem">About Me</div>
-                <!--<a href=""><div class="menuItem">Skills</div></a>-->
-                 <div onclick="scrollToSection('portfolio')"class="menuItem">Portfolio</div>
+
+                 <div onclick="scrollToSection('portfolio')" class="menuItem">Portfolio</div>
                  <div onclick="scrollToSection('contacts')"class="menuItem">Contacts</div>
             </div>
             <div class="barItem goto"><div onclick="scrollToSection('contacts')"class="gotoWrapper"> Contact Me </div></div>
+
+            <div class="barItem menu-button"><img id="menubtn" class="menu-button-icon" src="media/webicons/menu.svg"><img id="closebtn" class="close-btn-icon" src="media/webicons/close.svg"></div>
         </div>
 
         </div>
 
 
-        <div class="hero-wrapper">
+        <div id="start" class="hero-wrapper">
+
+             <div class="gold-dots gold-dots-hero">
+  <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+  <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+  <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+</div>
+
+
 
             <div class="hero">
+
+
                 
                 <div class="text-container">
                     <div class="bigtext">Hi, I'm <span class="coloranim">Simone</span></div>
                     <div class="smalltext">Web Developer | UI/UX Designer</div>
-                    <div class="contactBtnContainer"><a href="#"><div style="justify-content: flex-start;" class="barItem goto "><div class="gotoWrapper herobtn"> Let's work together </div></div></a></div>
+                    <div class="contactBtnContainer"><a href="#"><div style="justify-content: flex-start;" class="barItem goto "><div onclick="scrollToSection('contacts')" class="gotoWrapper herobtn"> Let's work together </div></div></a></div>
                 </div>
                 <div class="img-container"><img class="me" src="logoy.png"></div>
 
@@ -119,11 +141,19 @@
                 <div class="card"> <img class="cardIcon" src="media/webicons/wordpress.png"> <div class="cardText">Wordpress</div> </div>
                 <div class="card"> <img class="cardIcon" src="media/webicons/swift.png"> <div class="cardText">Swift (Xcode)</div> </div>
                 <div class="card"> <img class="cardIcon" src="media/webicons/git.svg"> <div class="cardText">Github</div> </div>
+
+                <div class="gold-dots" aria-hidden="true">
+  <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+  <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+  <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+</div>
                 
                     
                     
                 
             </div>
+
+
 
         </div>
 
@@ -162,9 +192,7 @@
 
 
 
-            <div class="project"> <div class="project-img-container"><img class="project-img" src="port.png"> </div> <div class="tilt"></div>  <div class="project-text">   <div class="project-title">Another Work</div> <div class="project-desc">A static, single-page website designed to introduce myself and showcase my previous work. You are currently on it!</div>  </div>  <div class="project-btn">Learn More</div>  </div>
-
-            <div class="project"> <div class="project-img-container"><img class="project-img" src="arr.png"> </div> <div class="tilt"></div>  <div class="project-text">   <div class="project-title">Another Work</div> <div class="project-desc">A showcase website for a local business specializing in furniture and woodworking</div>  </div>   <div class="project-btn">Learn More</div> </div>
+     
                    
                     
                 

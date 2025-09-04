@@ -1,6 +1,6 @@
   window.addEventListener("scroll", function () {
     const header = document.querySelector(".topbar");
-    if (window.scrollY > 50) {
+    if (window.scrollY > 25) {
       header.classList.add("scrolled");
     } else {
       header.classList.remove("scrolled");
@@ -10,11 +10,58 @@
 
 function scrollToSection(id) {
   const section = document.getElementById(id);
-  const yOffset = -130; // scroll 50px above the section
+  const yOffset = -130;
   const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+  closeMiniMenu();
 
   window.scrollTo({ top: y, behavior: 'smooth' });
 }
+
+
+
+//TOPBAR RESPONSIVENESS
+
+const menuBtn = document.getElementById("menubtn");
+const closeBtn = document.getElementById("closebtn");
+const miniMenu = document.getElementById("minimenu");
+
+menuBtn.addEventListener("click", () => {
+  miniMenu.style.display = "flex";
+  menuBtn.src="media/webicons/close.svg"
+  menuBtn.style.display = "none";
+  closeBtn.style.display = "block";
+
+  requestAnimationFrame(() => {   // allow transition to trigger
+    miniMenu.classList.add("active");
+  });
+
+});
+
+function closeMiniMenu(){
+  closeBtn.style.display = "none";
+  menuBtn.style.display = "block";
+  menuBtn.src="media/webicons/menu.svg"
+
+  miniMenu.classList.remove("active");
+  miniMenu.addEventListener("transitionend", function handler() {
+    if (!miniMenu.classList.contains("active")) {
+      miniMenu.style.display = "none";
+    }
+    miniMenu.removeEventListener("transitionend", handler);
+  });
+}
+
+closeBtn.addEventListener("click", () => {
+
+  closeMiniMenu();
+  
+  
+
+
+});
+
+
+
 
 
 
