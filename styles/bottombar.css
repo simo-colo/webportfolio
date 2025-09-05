@@ -1,13 +1,14 @@
 .bottombar-wrapper{
+	width:100%;
 	background-color: var(--shadow);
-	height:70px;
+	height:55px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
 .bottombar-container{
-	font-size: 0.8rem;
+	font-size: 0.7rem;
 	color: #bbb;
 
 }

@@ -4,10 +4,23 @@
 	width:170px;
 }
 
+.herobtncontainer{
+	width:200px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	max-width: 200px;
+}
+
+
+
 .text-container{
 	display: flex;
 	flex-direction: column;
 	gap: 2rem;
+	justify-content: center;
+	align-items: flex-start;
 }
 
 .bigtext{
@@ -69,7 +82,7 @@
 }
 
 .hero{
-	
+
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -82,4 +95,87 @@
 .me{
 	width: 15rem;
 	filter: drop-shadow(5px 5px 10px var(--shadow));
+}
+
+
+/*RESPONSIVENESS*/
+
+
+
+
+@media (max-width: 930px){
+
+	.me{
+	width: 12rem;
+	}
+
+	.hero-wrapper{
+		width:90%;
+		position: relative;
+		padding: 50px 10px 0px;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	.bigtext{
+		font-size: 2.5rem;
+		text-align: center;
+	}
+
+	.smalltext{
+		text-align: center;
+		font-size:1rem;
+	}
+
+	
+
+	.hero{
+
+		display: flex;
+		flex-direction: column;
+		gap:70px;
+		min-width:8px;
+		align-items: center;
+		justify-content: center;
+
+	}
+
+	.herobtncontainer{
+	justify-content: center;
+}
+
+.text-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap:40px;
+}
+
+
+
+}
+
+
+@media (max-width: 600px){
+	.me{
+	width: 10rem;
+	}
+
+	.hero{
+		gap:60px;
+	}
+
+	.text-container{
+		gap:30px;
+
+	}
+
+	.smalltext{
+		min-width: 255px;
+	}
+
+	.hero-wrapper{
+		padding-top:40px;
+	}
 }

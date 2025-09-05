@@ -29,10 +29,10 @@ a {
 
 .outer{
 	position: relative;
-	display: block;
+	display: flex;
 	flex-direction: column;
 	align-items: center;
-	border-radius:7px;
+	justify-content: center;
 }
 
 .section-title{
