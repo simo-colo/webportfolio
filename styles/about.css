@@ -9,11 +9,17 @@
 	align-items: center;
 	flex-direction: column;
 	padding-bottom:120px;
-  overflow: hidden;
-
-	
 
 }
+
+.about-wrapper > * {
+  overflow: hidden;
+}
+
+.about-wrapper > .exception {
+  overflow: visible;
+}
+
 
 .about-container{
 	padding: 0px 90px 30px;
