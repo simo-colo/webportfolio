@@ -48,9 +48,9 @@
 
 .project{
 
-	flex: 0 0 calc(35% - 60px);
+	flex: 0 0 calc(30% - 60px);
 
-	height:380px;
+	height:360px;
 	border-radius: 10px;
 	background-color: var(--darkg);
 	display: flex;
@@ -116,7 +116,7 @@
 .project-title{
 	color: #eee;
 	font-weight: bold;
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 	margin-bottom:20px;
 }
 
@@ -126,7 +126,7 @@
 
 .project-desc{
 	font-weight: lighter;
-	font-size: 1rem;
+	font-size: 0.9rem;
 	color: #ccc;
 
 }
@@ -159,13 +159,11 @@
 
 
 
-@media (max-width: 1150px){
+
+@media (max-width: 1250px){
 
 	.portfolio-container{
 	padding: 0px 50px 0px;
-
-	
-
 }
 
 
@@ -175,9 +173,10 @@
 }
 
 .project{
-	flex: 0 0 calc(40% - 40px);
-	max-width: 250px;
+	flex: 0 0 calc(30% - 40px);
+	max-width: 280px;
 	height:350px;
+	min-width:230px;
 }
 
 .project-title{
@@ -185,8 +184,9 @@
 }
 
 .project-desc, .project-btn{
-	font-size: 1rem;
+	font-size: 0.9rem;
 }
+
 
 
 
@@ -221,8 +221,9 @@
 		padding-bottom:100px;
 	}
 	.project{
-	flex: 0 0 calc(50% - 40px);
+	flex: 0 0 calc(35% - 40px);
 	height:330px;
+	min-width: 220px;
 }
 }
 
